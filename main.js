@@ -1,5 +1,5 @@
 // hoisting 
-/*
+
 function fn () {
   log('Hoisting de função');
 
@@ -10,22 +10,22 @@ function fn () {
 //boa prática declarar função antes de usar. Função fn vai funcionar
 
 fn();
-*/
+
 
 //imutabilidade
 //definir variável
-/*
+
 const user = {
   name: 'jorge',
   lastName: 'Lopes'
 };
 //função que pra cada resposta representando a formatação user responsa full name 
-function getUserwithFullName(user) {
+//function getUserwithFullName(user) {
   return {
     ...user,
     fullName: `${user.name} ${user.lastName}`
   }
-}
+}                  
 //define variavel constante que recebe resultado da função com entrada user 
 const userwithFullName = getUserwithFullName(user);
 //log
@@ -34,7 +34,7 @@ console.log(userwithFullName);
 
 
 
-/*
+
 //escopo de bloco
 //var não entende escopo de bloco.. só de função e global
 {
@@ -57,7 +57,7 @@ console.log(userwithFullName);
 }
 */
 
-/*
+
 //replace procura um valor e altera para outro
 const replacedText = 'texto'.replace('text', 'txet');
 console.log(replacedText);
@@ -68,10 +68,10 @@ const numerocomostring = MyNumber.toString();
 console.log(typeof numerocomostring);
 
 //parseFloat parseInt
-*/
 
 
-/*
+
+
 //objeto
 let user = {
   name: 'jorge'
@@ -97,7 +97,7 @@ console.log(user);
 */
 
 
-/*
+
 const user = {
   name: 'jorge',
   lastName: 'lopes de oliveira'
@@ -182,4 +182,30 @@ const personsWithCouse = persons.map(person => {
   person.couse = 'introdução ao js';
 });
 
-//
+//condição
+condicao ? valor1 : valor2
+
+true ? 'foo' : 'bar' //retorna foo
+false ? 'foo' : 'bar' //retorna bar
+///////// orientação a objeto
+
+// __proto__ -> prototype -> constructor
+
+
+
+//banco de dados
+//EXEMPLO1
+var db = openDatabase('Dbexemplo', '1.0', 'minhaBase', 4048) ,
+db.transaction(function(criar) {
+  criar.executeSql("CREATE TABLE users (ID PRIMARY KEY, nome TEXT, senha TEXT");
+})
+
+//EXEMPLO2
+var capturando = "";
+function capturar() {
+  capturando = document.getElementById('valor').value;
+  documento.getElementById('valorDigitado').innerHTML = capturando;
+
+}
+
+//exemplo3
