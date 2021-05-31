@@ -3,6 +3,8 @@
   <head>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="utf-8"> 
     <title> Botões </title>
   </head>
 <h1> Site de botões </h1>
@@ -10,6 +12,18 @@
 <div id="apareceu"> Apareceu! </div>
 <button type="button" onClick="aparecerTxt()"> Aparecer</button>
 <button type="button" onclick="desaparecerTxt()"> Desaparecer </button>
-<input type="text" id="input1" placeholder="Entrada1">
+
+<input type="text" id="input1" placeholder="Entrada1"/>
 <button type="submit" id="enviar" onClick="enviarTxt()"> Enviar </button>
+<p id="valorDigitado"></p>
+
+<input type="checkbox" id="chkBox" onclick="cat_check()">
+<label for="chkBox"> Ativar/Desativar</label>
+<form id="chkBoxTxt">
+  <input type="text" id="txt1" placeholder="texto"/>
+  <input type="text" id="txt2" placeholder="texto2"/>
+  <button type="submit" id="enviar2" onclick="enviarTxt2()"> Enviar 2 </button>
+  <div id="userReceive"></div>
+</form>
+
 </html>

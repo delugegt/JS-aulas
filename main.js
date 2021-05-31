@@ -20,7 +20,7 @@ const user = {
   lastName: 'Lopes'
 };
 //função que pra cada resposta representando a formatação user responsa full name 
-//function getUserwithFullName(user) {
+function getUserwithFullName(user) {
   return {
     ...user,
     fullName: `${user.name} ${user.lastName}`
@@ -203,9 +203,27 @@ db.transaction(function(criar) {
 //EXEMPLO2
 var capturando = "";
 function capturar() {
-  capturando = document.getElementById('valor').value;
-  documento.getElementById('valorDigitado').innerHTML = capturando;
+  capturando = document.getElementById('input1').value;
+  documento.getElementById('//id tag vazia').innerHTML = capturando;
 
 }
 
 //exemplo3
+
+
+//adicionar o ID 
+//evento onclick para o botão tipo submit
+//tag vazia com id especifico 
+//a var no js tem que ser vazia para capturar o valor digitado
+
+
+
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function (e) {
+  if(hideBox.checked) {
+    List.style.display = "none";
+  } else {
+    list.style.display = "initial";
+  }
+})
+
